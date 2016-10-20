@@ -1,6 +1,33 @@
 /*font-family: 'Shadows Into Light', cursive;
  font-family: 'Indie Flower', cursive;
 */
+#Martin{
+    font: 12;
+    width: 500px;
+    float: left;
+    position: absolute;
+	width: 160px;
+	height: 160px;
+	z-index: 1;
+	left: 50px;
+	top: 600px;
+	font-weight: bold;
+	font-size: 10px;
+    border-top: 3px solid #369;
+    border-bottom: 3px solid #369;
+    border-left: 3px solid #369;
+    border-right: 3px solid #369;
+}
+
+td {
+   width: 10%;
+   text-align: justify-all;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-spacing: 0;
+   font-family: sans-serif;
+   color: #003f5e;
+}
             #apDiv1 {
 	position: absolute;
 	width: 1000px;
@@ -102,7 +129,7 @@ div {
         div {
 	font-size: 18px;
 }
-        .class body nav .menu #apDiv3 form {
+        .class body nav.menu #apDiv3 form {
 	font-size: 12px;
 }
         form {
@@ -226,10 +253,10 @@ div {
 }
         #apDiv24 {
 	position: absolute;
-	width: 531px;
+	width: 750px;
 	height: 21px;
 	z-index: 1;
-	left: 220px;
+	left: 120px;
 	top: 142px;
 	color: #006680;
 	border-top-color: #006680;
