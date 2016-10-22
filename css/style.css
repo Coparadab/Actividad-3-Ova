@@ -334,7 +334,7 @@ body{
 
 background-repeat: no-repeat;
 background-size: cover;
-background-color: #666;
+background-color: black;
 position: relative;
 }
 h1{
@@ -384,6 +384,7 @@ li{
 	border-radius: 7px;
 	box-shadow: inset 0px 0px 10px white;
 	margin-top: 7px;
+	
 }
 section{
 	width: 713px;
@@ -405,7 +406,7 @@ aside{
 footer{
 	width: 1000px;
 	height: 70px;
-	background: #003f5e;
+	background: black;
 	float: left;
 	margin-top: 7px;
 	border-radius: 0px 0px 10px 10px;
@@ -448,6 +449,7 @@ p{
 .submenu:link{
 	color: #FFF;
 	text-decoration: none;
+	position: relative;
 }
 .submenu:visited{
 	color: #FFF;
