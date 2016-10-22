@@ -6,8 +6,8 @@
     width: 500px;
     float: left;
     position: absolute;
-	width: 160px;
-	height: 160px;
+	width: 180px;
+	height: 180px;
 	z-index: 1;
 	left: 50px;
 	top: 600px;
@@ -18,7 +18,22 @@
     border-left: 3px solid #369;
     border-right: 3px solid #369;
 }
-
+.multi{
+	z-index: 1;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+}
+.vide1{
+	position: absolute;
+	width: 60px;
+	height: 22px;
+	z-index: 1;
+	left: 80px;
+	top: 300px;
+	background-color: #FFF;
+	text-align: center;
+}
 td {
    width: 10%;
    text-align: justify-all;
@@ -113,26 +128,42 @@ td {
 	left: 206px;
 	top: -223px;
             }
-            #apDiv10 {
-            position: absolute;
-            width: 713px;
-            height: 39px;
-            z-index: 2;
-            left: -1px;
-            top: 206px;
-            }
-        strong {
-}
+    #apDiv10 {
+        position: absolute;
+        width: 713px;
+        height: 39px;
+        z-index: 2;
+        left: -1px;
+        top: 206px;
+    }
+   strong {
+
+   }
 div {
 	text-align: center;
 }
         div {
 	font-size: 18px;
 }
-        .class body nav.menu #apDiv3 form {
+        .class body nav.menu nav.submenu #apDiv3 form {
 	font-size: 12px;
 }
-        form {
+
+#princi .menu > li{
+	display:table;
+	overflow:hidden;
+	width:15%;
+	position: relative;
+	float: left;
+}  
+#princi .submenu > li{
+	display:table;
+	overflow:hidden;
+	width:15%;
+	position: relative;
+	float: left;
+}  
+form {
 	font-size: 12px;
 }
         #apDiv11 {
@@ -304,6 +335,7 @@ body{
 background-repeat: no-repeat;
 background-size: cover;
 background-color: #666;
+position: relative;
 }
 h1{
 	font-family: Arial, Helvetica, sans-serif;
@@ -380,6 +412,7 @@ footer{
 	margin-bottom: 20px;
 	font-size: 12px;
 	text-align: left;
+	position: relative;
 }
 p{
 
@@ -392,6 +425,8 @@ p{
 /*CLASES*/
 .ancho_menu_home{width: 900px;}
 .ancho_menu_paginas{width: 970px;}
+
+
 .menu:link{
 	color: #FFF;
 	text-decoration: none;
@@ -403,12 +438,45 @@ p{
 .menu:hover{
 	color: #FF6600;
 	text-decoration: none;
-	/*text-shadow: 0 0 13px white;*/
 }
 .menu:active{
 	color: #003F5E;
 	text-decoration: none;
 }
+
+
+.submenu:link{
+	color: #FFF;
+	text-decoration: none;
+}
+.submenu:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+.submenu:hover{
+	color: #FF6600;
+	text-decoration: none;
+	/*text-shadow: 0 0 13px white;*/
+}
+.submenu:active{
+	color: #003F5E;
+	text-decoration: none;
+}
+
+nav li ul {
+	float:center;
+   	margin:0;
+   	display:none;
+	top:5px;
+}
+nav li:hover ul {
+	position: unset;
+	top:0%;
+	left: 0%;
+	display: block;
+	position: none;	
+}
+
 
 /*SEUDO CLASES*/
 p {
