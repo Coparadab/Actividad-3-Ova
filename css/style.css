@@ -405,7 +405,7 @@ p{
 
 
 /*Caja contenedora*/   
-#wrap { font-size: auto; width: auto; padding: 10px;
+#wrap { font-size: auto; width: auto; padding: 7px;
         margin: 0 auto; /*Da lugar al centrado de la caja en el elemento superior body*/
         background-color: #003F5E;
     -khtml-border-radius: 5px;
