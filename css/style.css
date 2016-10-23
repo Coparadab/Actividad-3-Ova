@@ -348,6 +348,9 @@ header{
 	background: rgba(255, 255, 255, 10,70);
 }
 
+nav{
+	border-radius: 10px;
+}
 section{
 	width: 713px;
 	background: white;
@@ -386,6 +389,12 @@ p{
 	text-align: justify;
 }
 /*CLASES*/
+.menu:link{color: white; text-decoration: none;}
+.menu:visited{color: white; text-decoration: none;}
+.menu:hover{color: white; text-decoration: none; text-shadow: 0 0 13px white;}
+.menu:active{color: white; text-decoration: none;}
+.ancho_menu_home{width: 900px;}
+.ancho_menu_paginas{width: 970px;}
 /*Caja contenedora*/   
 #wrap { font-size: auto; width: auto; padding: 10px;
         margin: 0 auto; /*Da lugar al centrado de la caja en el elemento superior body*/
@@ -417,7 +426,7 @@ p{
 #navbar li:hover li { float: none; } /*Anulamos el float left que define el elemento padre para que los subitems se muestren en vertical */
    
 /*Creamos la apariencia de los subitems de menú, color de fondo, borde inferior, color de texto*/
-#navbar li:hover li a { background-color: gray; border-bottom: 3px solid #fff; color: #000; }
+#navbar li:hover li a { background-color: gray; border-bottom: 3px; solid #fff; color: #000; }
 
 /*Creamos el efecto de cambio de color y aspecto cuando ponemos el puntero del ratón sobre un subitem de menú*/   
 #navbar li li a:hover { background-color: orange; }
