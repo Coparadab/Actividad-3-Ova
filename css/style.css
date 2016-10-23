@@ -403,6 +403,7 @@ p{
 	font-family: "Franklin Gotic Book",Times;
 }
 
+
 /*Caja contenedora*/   
 #wrap { font-size: auto; width: auto; padding: 10px;
         margin: 0 auto; /*Da lugar al centrado de la caja en el elemento superior body*/
@@ -429,7 +430,12 @@ border: 1px solid #cccccc;
 /*Listas de subitems de menú*/   
 #navbar li ul {
    display: none; /*La lista inicialmente no se muestra debido a display:none; */
-   background-color: gray;}
+   background-color: gray;
+-khtml-border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border: 1px solid #cccccc;}
    
 #navbar li:hover ul {
    font-size: 12px;
