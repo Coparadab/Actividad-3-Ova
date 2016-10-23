@@ -145,24 +145,7 @@ div {
         div {
 	font-size: 18px;
 }
-        .class body nav.menu nav.submenu #apDiv3 form {
-	font-size: 12px;
-}
 
-#princi .menu > li{
-	display:table;
-	overflow:hidden;
-	width:15%;
-	position: relative;
-	float: left;
-}  
-#princi .submenu > li{
-	display:table;
-	overflow:hidden;
-	width:15%;
-	position: relative;
-	float: left;
-}  
 form {
 	font-size: 12px;
 }
@@ -364,6 +347,7 @@ header{
 	height: 120 px;
 	background: rgba(255, 255, 255, 10,70);
 }
+/*
 nav{
 	width: 1000px;
 	height: 65px;
@@ -371,6 +355,7 @@ nav{
 	border-radius: 0px 0px 10px 10px;
 	color: #006680;
 }
+
 ul{
 margin: auto;
 padding-top: 4px;
@@ -380,12 +365,13 @@ li{
 	list-style-type: none;
 	padding: 13px;
 	background: #003f5e;
-	margin: 3px;
+	margin: 1px;
 	border-radius: 7px;
 	box-shadow: inset 0px 0px 10px white;
 	margin-top: 7px;
 	
 }
+*/
 section{
 	width: 713px;
 	background: white;
@@ -424,60 +410,44 @@ p{
 	text-align: justify;
 }
 /*CLASES*/
-.ancho_menu_home{width: 900px;}
-.ancho_menu_paginas{width: 970px;}
+/*Caja contenedora*/   
+#wrap { font-size: auto; width: auto; padding: 20px;
+        margin: 0 auto; /*Da lugar al centrado de la caja en el elemento superior body*/
+        background-color: #fff;}
 
+/* Estilos que crean el menú desplegable */
+/*Eliminamos padding y margin que introducen navegadores por defecto en listas*/
+#navbar { padding:0; margin:0; }
 
-.menu:link{
-	color: #FFF;
-	text-decoration: none;
-}
-.menu:visited{
-	color: #FFF;
-	text-decoration: none;
-}
-.menu:hover{
-	color: #FF6600;
-	text-decoration: none;
-}
-.menu:active{
-	color: #003F5E;
-	text-decoration: none;
-}
+/*Elementos items principales de menú que se muestran siempre*/
+#navbar li { list-style: none; float: left; margin:10px;}
+   
+#navbar li a {
+   display: block; /* Usamos display block para poder aplicar propiedades de caja a links */
+   padding: 3px 8px; background-color: #5e8ce9; color: #fff;
+   text-decoration: none; }
 
+/*Listas de subitems de menú*/   
+#navbar li ul {
+   display: none; /*La lista inicialmente no se muestra debido a display:none; */
+   background-color: #69f;}
+   
+#navbar li:hover ul {
+   font-size: 12px;
+   display: block; /*Al situar el cursor sobre el item la lista de subitems pasa de display none a display block y se muestra*/
+   position: absolute; /*Al desplegarse el submenú no ocupa espacio y no desplaza a otros elementos gracias a que establecemos position absolute*/
+   margin: 0; padding: 0; /*Anulamos margin y padding que por defecto introducen navegadores*/
+   }
+#navbar li:hover li { float: none; } /*Anulamos el float left que define el elemento padre para que los subitems se muestren en vertical */
+   
+/*Creamos la apariencia de los subitems de menú, color de fondo, borde inferior, color de texto*/
+#navbar li:hover li a { background-color: #69f; border-bottom: 1px solid #fff; color: #000; }
 
-.submenu:link{
-	color: #FFF;
-	text-decoration: none;
-	position: relative;
-}
-.submenu:visited{
-	color: #FFF;
-	text-decoration: none;
-}
-.submenu:hover{
-	color: #FF6600;
-	text-decoration: none;
-	/*text-shadow: 0 0 13px white;*/
-}
-.submenu:active{
-	color: #003F5E;
-	text-decoration: none;
-}
+/*Creamos el efecto de cambio de color y aspecto cuando ponemos el puntero del ratón sobre un subitem de menú*/   
+#navbar li li a:hover { background-color: #8db3ff; }
+   
+.limpiador{padding:0; border-style:none; clear:both; } /*Forzamos a la caja a mostrarse aún conteniendo elementos flotantes*/
 
-nav li ul {
-	float:center;
-   	margin:0;
-   	display:none;
-	top:5px;
-}
-nav li:hover ul {
-	position: unset;
-	top:0%;
-	left: 0%;
-	display: block;
-	position: none;	
-}
 
 
 /*SEUDO CLASES*/
@@ -486,3 +456,4 @@ p {
 	font-weight: normal;
 	color: #333;
 }
+
