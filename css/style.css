@@ -413,7 +413,7 @@ p{
 /*Caja contenedora*/   
 #wrap { font-size: auto; width: auto; padding: 20px;
         margin: 0 auto; /*Da lugar al centrado de la caja en el elemento superior body*/
-        background-color: #fff;}
+        background-color: #003F5E;}
 
 /* Estilos que crean el menú desplegable */
 /*Eliminamos padding y margin que introducen navegadores por defecto en listas*/
